@@ -24,14 +24,25 @@
 // 32679 -> 6
 //-----------------------------
 
-// int ThirdNumber(int num)
-// {
-//     while (num % 100 != 0)
-//     {
-//         int del = num / 10;
-//     }
 
-// }
+void ThirdNumber(int num)
+{
+    while (num / 100 == 0)
+    {
+        int num1 = num / 10;
+    }
+    if (num / 10 == 0)
+    {
+        System.Console.WriteLine("третьей цифры нет");
+    }
+    int third = num1 % 10;
+    System.Console.WriteLine(third);
+}
+System.Console.WriteLine("input number: ");
+int num = Convert.ToInt32(System.Console.ReadLine());
+ThirdNumber(num);
+
+
 
 //------------------------
 
@@ -44,20 +55,18 @@
 //--------------------------------
 
 
-using System.Globalization;
+// void week(int num)
+// {
+//     if (num == 6 || num == 7)
+//     {
+//         System.Console.WriteLine("Да");
+//     }
+//     else
+//     {
+//         System.Console.WriteLine("нет");
+//     }
+// }
 
-void week(int num)
-{
-    if (num == 6 || num == 7)
-    {
-        System.Console.WriteLine("Да");
-    }
-    else
-    {
-        System.Console.WriteLine("нет");
-    }
-}
-
-System.Console.WriteLine("Input day of week: ");
-int num = Convert.ToInt32(System.Console.ReadLine());
-week(num);
+// System.Console.WriteLine("Input day of week: ");
+// int num = Convert.ToInt32(System.Console.ReadLine());
+// week(num);
